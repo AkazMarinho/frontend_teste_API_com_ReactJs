@@ -1,0 +1,91 @@
+.content{
+    width: 800px;
+    min-height: 400px;
+    position: inherit;
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 10;
+    padding: 15px;
+    
+    border-top-left-radius: 30px;
+    border-top-right-radius:30px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+
+.content input{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #b6b6b6;
+    padding: 5px;
+}
+
+.content input::placeholder{
+    color: #343434;
+}
+
+.table_list{
+    border: 1px solid #bfbfbf;
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: separate;
+    border-spacing: 0 0; 
+
+}
+
+.table_list td:first-child{
+    text-align: center;
+}
+
+.table_list td{
+    height: 35px;
+}
+
+.header td{
+    border-bottom: 1px solid #bfbfbf; /* Removendo as bordas padrão das células */
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.header td:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -12px; /* Ajuste fino para alinhar a borda com a célula */
+    bottom: 0;
+    width: 1px;
+    background-color: #bfbfbf; /* Cor da borda */
+    height: 70%;
+}
+
+.header td:nth-child(1){
+    width: 50px;
+}
+
+.header td:last-child{
+    width: 80px;
+}
+
+
+.header td:nth-child(3){
+    width: 100px;
+}
+
+.body tr:hover{
+    background-color: #b6b6b6;
+}
+
+.body td{
+    cursor: pointer;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.body tr:last-child td{
+    border-bottom:none;
+}

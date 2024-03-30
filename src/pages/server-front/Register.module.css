@@ -1,0 +1,94 @@
+.content{
+    margin-top: 30px;
+    width: 800px;
+    /* height: 400px */
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+
+}
+
+.enptyData{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    width: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+}
+
+.enptyData button{
+    width: 70px;
+    height: 25px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+.enptyData button:hover{background-color: #cccccc;
+}
+
+.internal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.form input[type=number]::-webkit-inner-spin-button,
+.form input[type=number]::-webkit-outer-spin-button {
+    
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form div{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.form input{
+    height: 30px;
+    width: 250px;
+    border-radius: 8px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(201, 201, 201);
+}
+
+.form input::placeholder{
+    color: rgb(41, 41, 41);
+}
+
+.form button{
+    height: 40px;
+    width: 100px;
+    background-color: #0e76a8;
+    font-size: 18px;    
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+}
